@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [ "123424" ]
+    branches: [ "master" ]
 
 env:
   IMAGE_NAME: reactjs-image-gcp
@@ -29,7 +29,7 @@ jobs:
         if: always()
         run: |
           docker logout 
-          
+
   # deploy-service: 
   #   needs: build-and-push
   #   runs-on: ubuntu-latest
